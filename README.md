@@ -2,7 +2,7 @@
 
 If you want to Apply to [Apica](https://apicasystems.com) you are in the right spot. 
 
-<img src="https://files.apicasystem.com/HiringEngineersUS/Apica+Rooftop+Meetup.jpeg" width="500" height="332" alt="ApicaRooftopBeers">
+<img src="https://files.apicasystem.com/HiringEngineersUS/Apica+Rooftop+Meetup.jpeg" width="625px" height="415" alt="ApicaRooftopBeers">
 
 
 # Why work at Apica
