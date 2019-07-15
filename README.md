@@ -9,7 +9,7 @@ If you want to Apply to [Apica](https://apicasystems.com) you are in the right s
 
 # Why work at Apica
 
-We tackle some of the hardest technical problems yet deliver our solutions and results into 'common sense' metrics that can delivered to any non-technical stakeholder.
+We tackle some of the hardest technical problems, yet deliver our solutions and results into 'common sense' metrics that can delivered to any non-technical stakeholder.
 
 Do you yearn to solve _real_ world problems?  Do you want to want to make a difference for some of the biggest companies in the world?  Do you look at broken solutions with the optimism to rebuild them- better, stronger, faster?  At Apica, we have the technology and we're looking for bright minds to join our us as our company and technolgy takes off.
 
