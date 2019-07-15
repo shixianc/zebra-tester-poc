@@ -17,7 +17,7 @@ Please read through the exercises before starting.
 To submit your answers:
 
 1. Fork this repo.
-2. Add your notes and answers to answers.md
+2. Add your notes and answers to **answers.md**
 3. Commit as much code as you need to support your answers.
 4. Submit a pull request.
 
@@ -29,14 +29,6 @@ Please provide screenshots and copy+paste your code snippets for all steps.
 
 - Sign up for developer access to a familiar REST API, use another REST API that you are familiar with, or use a public sandbox.  Bonus points for virtualizing your own API sandbox or knowledge/use of your own web microservice endpoints.
 - Understand the HTTPS schemes available and select 2+ related requests to create a meaningful transaction
-
-| Example   |
-| ------ |
-|  "Find a **User**, then find their **Order History**." |
-| 1.  The first request might use a request to the endpoint `GET /user` |
-| 2.  Then selecting a User from the previous response, a subsequent request would collect the Orders of that user using a query with the request: `GET/orders?` or part of the request body content `POST/orders`  ..depending on how your chosen  works.) |
-| Bonus points for using this to automate a manual task repeated often.|
-
 - Add your chosen requests into a simple Postman collection
 - Use the postman documentation [here](https://blog.getpostman.com) & [here](https://learning.getpostman.com/) to chain the requests by extracting data from the first API response into the request of the second.
 
@@ -50,8 +42,9 @@ Please provide screenshots and copy+paste your code snippets for all steps.
 Please provide screenshots and copy+paste your code snippets for all steps.
 
 - With Apica Zebra IDE import or manually add URLs from the Postman collection you created in Exercise 1.
-- Upload the script to Apica Synthetic Monitoring ([ASM](https://wpm.apicasystem.com/)]) or Apica LoadTest ([ALT](https://loadtest.apicasystem.com/)]).
-- In your answers.md comment on the insight and benefit recieved from running this chained transaction as a continuous synthetic monitor or via performance testing.
+- Upload the script to Apica Synthetic Monitoring [ASM](https://wpm.apicasystem.com/) or Apica LoadTest [ALT](https://loadtest.apicasystem.com/).
+- Create and execute a monitor or a load test.
+- In your **answers.md** comment on the insight and benefit recieved from running this chained transaction as a continuous synthetic monitor or via performance testing.
 - Refer to [Apica Zebra documentation](https://academy.apicasystems.com/astdocs/doku.php) for guidance using the toolset
 
 **Questions:**
@@ -68,7 +61,7 @@ Please provide screenshots and copy+paste your code snippets for all steps.
 3. Pick one and add it to your cart
 (You do not need to login on your browser (if you are, please remember to remove it from your cart)
 - Replay your recording and inspect the recorded actions.   Was the test case able to replay without breaking?
-- Next Remove any 'mouse' commands and re-execute the script.  Was the test case able to complete without breaking now?  If not, can you modify any target elements to improve playback?
+- Next, remove any 'mouse' commands and re-execute the script.  Was the test case able to complete without breaking now?  If not, can you modify any target elements to improve playback?
 - Upload to [ASM](https://wpm.apicasystem.com/) and create as a monitoring check
 
 **Questions:**
@@ -80,7 +73,7 @@ Please provide screenshots and copy+paste your code snippets for all steps.
 
 1. Get in touch!
 2. Fork this repo.
-3. Commit your work within answers.md
+3. Commit your work within **answers.md**
 4. Submit a pull request against this upstream repository.
 
 Please reach out to ask questions if you have any!  
