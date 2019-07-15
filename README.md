@@ -1,35 +1,87 @@
-# Apica Engineers Hiring
+# Solutions Engineering Technical Exercise
 
-If you want to Apply to [Apica](https://apicasystems.com) you are in the right spot. 
+Applying to be a Solutions Engineer at [Apica](https://apicasystems.com)? You are in the right place. 
 
 <img src="https://files.apicasystem.com/HiringEngineersUS/Apica+Rooftop+Meetup.jpeg" width="625px" height="415" alt="ApicaRooftopBeers" title="Apica Team on our Santa Monica rooftop">
 
- > *Apica Team on our Santa Monica rooftop*
 
 
-# Why work at Apica
+## Getting Started
 
-We tackle some of the hardest technical problems yet deliver our solutions and results into 'common sense' metrics that can delivered to any non-technical stakeholder.
+Please read through the exercises before starting.
 
-Do you want to make a difference? Are you exceptional at your job, and intrinsically motivated by it? Do you eat hard problems for breakfast and find them beautifully simple solutions by lunchtime? Do you ever wish you were there in the early days of these startups everyone is talking about?
+* Download Postman here - http://getpostman.com/
+* Get the Selenium IDE Extension - https://www.seleniumhq.org/selenium-ide/
+* Download Zebra IDE - https://www.apicasystems.com/scripting-tools/
 
-If so, we want to hear from you.
+To submit your answers:
 
-Do you yearn to solve _real_ world problems?  Do you want to want to make a difference for some of the biggest companies in the world?  Do you look at broken solutions with the optimism to rebuild them- better, stronger, faster?  At Apica, we have the technology and we're looking for bright minds to join our us as our company and technolgy takes off.
+1. Fork this repo.
+2. Add your notes and answers to answers.md
+3. Commit as much code as you need to support your answers.
+4. Submit a pull request.
 
-# The Positions
+Use screenshots, gifs, videos! Any sort of creativity or interesting formats are totally welcome in presenting your solutions.  However, please keep your content organized and professionally formatted.
 
-  - The `solutions-engineer` branch will be available in [this branch](https://github.com/) of the repository.
-  - The `technical-account-manager` branch will be available in [this branch](https://github.com/) of the repository.
-  - The `customer-success-engineer` branch will be available in [this branch](https://github.com/) of the repository.
+## The Exercise - Part 1 Chaining API Requests
+
+Please provide screenshots and copy+paste your code snippets for all steps.
+
+- Sign up for developer access to a familiar REST API, use another REST API that you are familiar with, or use a public sandbox.  Bonus points for virtualizing your own API sandbox or knowledge/use of your own web microservice endpoints.
+- Understand the HTTPS schemes available and select 2+ related requests to create a meaningful transaction
+
+| Example   |
+| ------ |
+|  "Find a **User**, then find their **Order History**." |
+| 1.  The first request might use a request to the endpoint `GET /user` |
+| 2.  Then selecting a User from the previous response, a subsequent request would collect the Orders of that user using a query with the request: `GET/orders?` or part of the request body content `POST/orders`  ..depending on how your chosen  works.) |
+| Bonus points for using this to automate a manual task repeated often.|
+
+- Add your chosen requests into a simple Postman collection
+- Use the postman documentation [here](https://blog.getpostman.com) & [here](https://learning.getpostman.com/) to chain the requests by extracting data from the first API response into the request of the second.
+
+**Questions:**
+1. Why is the global/environment variable necessary?
+2. What would happen to the second request if the pre-request script is missing or failed to run successfully?
+
+
+## The Exercise - Part 2 Chaining API Requests with Apica
+
+Please provide screenshots and copy+paste your code snippets for all steps.
+
+- With Apica Zebra IDE import or manually add URLs from the Postman collection you created in Exercise 1.
+- Upload the script to Apica Synthetic Monitoring ([ASM](https://wpm.apicasystem.com/)]) or Apica LoadTest ([ALT](https://loadtest.apicasystem.com/)]).
+- In your answers.md comment on the insight and benefit recieved from running this chained transaction as a continuous synthetic monitor or via performance testing.
+- Refer to [Apica Zebra documentation](https://academy.apicasystems.com/astdocs/doku.php) for guidance using the toolset
+
+**Questions:**
+1. Describe how can users more easily manage multiple variables accross multiple API scripts comparitively with Zebra IDE?
+
+
+## The Exercise - Part 3 EUM insights with Selenium
+
+Please provide screenshots and copy+paste your code snippets for all steps.
+
+- Using Selenium IDE, create a test case against amazon.com.  Use the recorder to record the transaction:
+1. Open `https://www.amazon.com`
+2. Search for _"phone cases"_
+3. Pick one and add it to your cart
+(You do not need to login on your browser (if you are, please remember to remove it from your cart)
+- Replay your recording and inspect the recorded actions.   Was the test case able to replay without breaking?
+- Next Remove any 'mouse' commands and re-execute the script.  Was the test case able to complete without breaking now?  If not, can you modify any target elements to improve playback?
+- Upload to [ASM](https://wpm.apicasystem.com/) and create as a monitoring check
+
+**Questions:**
+1. What components of the page HTML change or do you anticipate to change in your scenario over the next few days or weeks?
+2. How does (or might) asynchronous javascript modify the rendered contont on the page?  How does this break script execution?
+
 
 # How do I submit my results?
 
 1. Get in touch!
 2. Fork this repo.
-3. Check out the branch that you are interested in applying.
-4. Commit your work.
-5. Submit a pull request against this upstream repository.
+3. Commit your work within answers.md
+4. Submit a pull request against this upstream repository.
 
 Please reach out to ask questions if you have any!  
 
