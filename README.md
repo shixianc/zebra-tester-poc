@@ -16,7 +16,7 @@ Do you yearn to solve _real_ world problems?  Do you want to want to make a diff
 # The Positions
 
   - The `solutions-engineer` branch will be available in [this branch](https://github.com/ApicaSolutionsEngineering/hiring-engineers/tree/solutions-engineer) of the repository.
-  - The `technical-account-manager` branch will be available in [this branch](https://github.com/) of the repository.
+  - The `technical-account-manager` branch will be available in [this branch](https://github.com/ApicaSolutionsEngineering/hiring-engineers/tree/technical-account-manager) of the repository.
   - The `customer-success-engineer` branch will be available in [this branch](https://github.com/) of the repository.
 
 # How do I submit my results?
