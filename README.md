@@ -16,7 +16,7 @@ Please read through the exercises before starting.
 
 Before starting please contact support@apicasystems.com with the subject line "Candidate Exercise - Agent Install Credentials".  In your message specify that you are asking for:
 1) Trial Account creation to ASM 
-2) credentials to authenticate your own private browser agent.
+2) Credentials to authenticate your private Apica agent.
 
 For the agent installation:
 - Create an AWS Account - https://aws.amazon.com/account/
