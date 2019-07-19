@@ -13,18 +13,23 @@ Please read through the exercises before starting.
 
 
 **Setup**
-Create an AWS Account - https://aws.amazon.com/account/
-Create an EC2 instance using a CentOS 7 Community AMI - https://aws.amazon.com/marketplace/pp/B00O7WM7QW?ref=cns_srchrow
 
-Before starting please contact support@apicasystems.com with the subject line "Candidate Exercise - Agent Install Credentials".  In your message specify that you are asking for 1) Trial Account creatino to ASM 2) credentials to authenticate your own private browser agent.
+Before starting please contact support@apicasystems.com with the subject line "Candidate Exercise - Agent Install Credentials".  In your message specify that you are asking for:
+1) Trial Account creation to ASM 
+2) credentials to authenticate your own private browser agent.
+
+For the agent installation:
+- Create an AWS Account - https://aws.amazon.com/account/
+- Create an EC2 instance using a [CentOS 7 Community AMI](https://aws.amazon.com/marketplace/pp/B00O7WM7QW?ref=cns_srchrow)
 
 **Downloads**
+
 * Get the Selenium IDE Extension - https://www.seleniumhq.org/selenium-ide/
 * Apica agent package (found in steps below)
 * Apica Zebra IDE
-	- Windows: https://apica-packages.s3.eu-central-1.amazonaws.com/current/ast/0.4.6/windows/2012r2/ast-0.4.6-332-x64.msi
-	- Mac: https://apica-packages.s3.eu-central-1.amazonaws.com/current/ast/0.4.6/mac_os_x/10.10/ast-0.4.6-216.dmg
-	- Linux: https://apica-packages.s3.eu-central-1.amazonaws.com/current/ast/0.4.6/ubuntu/14.04/ast_0.4.6-56_amd64.deb
+	- [Windows](https://apica-packages.s3.eu-central-1.amazonaws.com/current/ast/0.4.6/windows/2012r2/ast-0.4.6-332-x64.msi)
+	- [Mac](https://apica-packages.s3.eu-central-1.amazonaws.com/current/ast/0.4.6/mac_os_x/10.10/ast-0.4.6-216.dmg)
+	- [Linux](https://apica-packages.s3.eu-central-1.amazonaws.com/current/ast/0.4.6/ubuntu/14.04/ast_0.4.6-56_amd64.deb)
 
 
 To submit your answers:
@@ -36,12 +41,13 @@ To submit your answers:
 
 Use screenshots, gifs, videos! Any sort of creativity or interesting formats are totally welcome in presenting your solutions.  However, please keep your content organized and professionally formatted.
 
+
 ## The Exercise - Part 1 Apica Account Setup
 
-- Select a web site / application / web service to be the target of a group of monitors you will create
-- Within the Apica Synthetic portal create 3-4 checks (or however many you feel appropriate to evaluate that site and its components)
-- Create at least 1 browser-based monitor
-- Add select check data from your monitors to an Apica Panel (Note: you will need to ensure the panel_user is added to your check group)
+- Select a web site / application / web service to be the target of a group of monitors
+- Within the Apica Synthetic portal create 3-4 monitoring checks against your chosen site (or however many you feel appropriate to evaluate that site and its components)
+- You must create at least 1 browser-based monitor  (Bonus: for adding a transaction by appending a selenium script)
+- Add check data from your monitors to an Apica Panel (Note: you will need to ensure the panel_user is added to your check group)
 
 **Questions:**
 1. Describe the chosen monitoring checks and the insights they provide to either availability, performance, or other unique insights.
