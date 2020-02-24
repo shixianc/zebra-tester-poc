@@ -18,7 +18,7 @@ To submit your answers:
 3. Commit as much as needed to support your answers.
 4. Submit a pull request.
 
-*Important*: Set the repository as Private (under Repo Settings > Danger Zone > Make Private) and add user ApicaSolutionsEngineering as a collaborator for the Apica repo.  Commit your completed scripts under the newly created repo.
+**Important**: Set the repository as Private (under Repo Settings > Danger Zone > Make Private) and add user ApicaSolutionsEngineering as a collaborator for the Apica repo.  Commit your completed scripts under the newly created repo.
 
 Use screenshots, gifs, videos! Any sort of creativity or interesting formats are totally welcome in presenting your solutions.  However, please keep your content organized and professionally formatted.
 
