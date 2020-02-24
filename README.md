@@ -11,11 +11,16 @@ Applying to be an Intern at [Apica](https://apicasystems.com)? You are in the ri
 Please read through the exercises before starting.
 
 
-**Setup**
+To submit your answers:
 
-Before starting please contact support@apicasystems.com with the subject line "Candidate Exercise - Agent Install Credentials".  In your message specify that you are asking for:
-1) Trial Account creation to ASM 
-2) Credentials to authenticate your private Apica agent.
+1. Fork this repo.
+2. Add your notes and answers to **answers.md**
+3. Commit as much as needed to support your answers.
+4. Submit a pull request.
+
+*Important*: Set the repository as Private (under Repo Settings > Danger Zone > Make Private) and add user ApicaSolutionsEngineering as a collaborator for the Apica repo.  Commit your completed scripts under the newly created repo.
+
+Use screenshots, gifs, videos! Any sort of creativity or interesting formats are totally welcome in presenting your solutions.  However, please keep your content organized and professionally formatted.
 
 
 **Downloads**
@@ -28,22 +33,9 @@ Before starting please contact support@apicasystems.com with the subject line "C
 	- [Linux](http://zebrascriptingtools.apicasystems.com/download/zst-0.5.5.deb)
 
 
-To submit your answers:
-
-1. Fork this repo.
-2. Add your notes and answers to **answers.md**
-3. Commit as much as needed to support your answers.
-4. Submit a pull request.
-
-Important: Set the repository as Private (under Repo Settings > Danger Zone > Make Private) and add user ApicaSolutionsEngineering as a collaborator for the Apica repo.  Commit your completed scripts under the newly created repo.
-
-
-Use screenshots, gifs, videos! Any sort of creativity or interesting formats are totally welcome in presenting your solutions.  However, please keep your content organized and professionally formatted.
-
-
 ## The Exercise - Part 1 API Investigation
 
-- Using your Browser's Development Tools, bring up the Network tab.  Ensure the record light is on and load any web page. Find a microservice call.
+- Using your Browser's Development Tools, bring up the Network tab.  Ensure the record light is on and load any web page. Find an API call made by the browser.
 - Copy the request and response into your **answers.md** 
 
 **Questions:**
@@ -56,14 +48,6 @@ Please provide screenshots and copy+paste your code snippets for all steps.
 
 - Sign up for developer access to a familiar REST API, use another REST API that you are familiar with, or use a public sandbox.  Bonus points for virtualizing your own API sandbox or knowledge/use of your own web microservice endpoints.
 - Understand the HTTPS schemes available and select 2+ related requests to create a meaningful transaction
-
-| Example   |
-| ------ |
-|  "Find a **User**, then find their **Order History**." |
-| 1.  The first request might use a request to the endpoint `GET /user` |
-| 2.  Then selecting a User from the previous response, a subsequent request would collect the Orders of that user using a query with the request: `GET/orders?` or part of the request body content `POST/orders`  ..depending on how your chosen  works.) |
-| Bonus points for using this to automate a manual task repeated often.|
-
 - Add your chosen requests into a simple Postman collection
 - Use the postman documentation [here](https://blog.getpostman.com) & [here](https://learning.getpostman.com/) to chain the requests by extracting data from the first API response into the request of the second.
 
