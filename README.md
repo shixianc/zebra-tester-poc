@@ -11,21 +11,17 @@ Applying to be an Intern at [Apica](https://apicasystems.com)? You are in the ri
 Please read through the exercises before starting.
 
 
-
 **Setup**
 
 Before starting please contact support@apicasystems.com with the subject line "Candidate Exercise - Agent Install Credentials".  In your message specify that you are asking for:
 1) Trial Account creation to ASM 
 2) Credentials to authenticate your private Apica agent.
 
-For the agent installation (Bonus):
-- Create an AWS Account - https://aws.amazon.com/account/
-- Create an EC2 instance using a [CentOS 7 Community AMI](https://aws.amazon.com/marketplace/pp/B00O7WM7QW?ref=cns_srchrow)
 
 **Downloads**
 
-* Get the Selenium IDE Extension - https://www.seleniumhq.org/selenium-ide/
-* Apica agent package (found in steps below)
+* Postman - https://www.getpostman.com/
+
 * Apica Zebra IDE
 	- [Windows](http://zebrascriptingtools.apicasystems.com/download/zst-0.5.5.msi)
 	- [Mac](http://zebrascriptingtools.apicasystems.com/download/zst-0.5.5.dmg)
@@ -38,6 +34,9 @@ To submit your answers:
 2. Add your notes and answers to **answers.md**
 3. Commit as much as needed to support your answers.
 4. Submit a pull request.
+
+Important: Set the repository as Private (under Repo Settings > Danger Zone > Make Private) and add user ApicaSolutionsEngineering as a collaborator for the Apica repo.  Commit your completed scripts under the newly created repo.
+
 
 Use screenshots, gifs, videos! Any sort of creativity or interesting formats are totally welcome in presenting your solutions.  However, please keep your content organized and professionally formatted.
 
@@ -85,18 +84,18 @@ Please provide screenshots and copy+paste your code snippets for all steps.
 
 
 
-## The Exercise - (Bonus) Part 4 Account Setup and Private Agent Installation
+## The Exercise - Part 4 Java Exercise
 
-Please provide screenshots and copy+paste your code snippets for all steps.
-1. Setup Account
-- Select a web site / application / web service to be the target of a group of monitors
-- Within the Apica Synthetic portal create 3-4 monitoring checks against your chosen site (or however many you feel appropriate to evaluate that site and its components)
-2. Install Agent
-- Download the agent package found [here](https://apica-packages.s3.eu-central-1.amazonaws.com/current/asm-browser-agent/1.2.2/el/7/asm-browser-agent-1.2.2-1.el7.x86_64.rpm)
-- Install instructions found [here](https://files.apicasystem.com/se/ASM+Agent+Installation+Manual+-+CentOS7.pdf)
-- Once the agent is installed, started, and becomes registered (it may take up to 30 minutes), create a check from your new private location.
-- Remember to terminate any running instances!
+Since ZebraTester and Zebra IDE are Java based, we are sometimes required to extend functionality through the use of plugins  written in Java. Use the IDE of your choice to create this java class (e.g. Eclipse, IntelliJ, ...). You may use Javascript or other programming language for this exercise if instructed to do so.
 
+1. Create a function that accepts 3 parameters to return a sub-string value between two different strings from an input string.
+- public String getSubString(input_string, from_string, to_string)
+- sample input and output (minus quotes)
+	- input_string = “the quick brown fox jumped over the last dog”
+	- from_string = “quick”
+	- to_string = “the”
+	- return value = “ brown fox jumped over ” (including leading and trailing space)
+- Bonus for adding as a plugin to Zebra IDE to execute as a component of a script
 
 
 # How do I submit my results?
