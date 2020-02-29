@@ -24,7 +24,7 @@
     I do not see any calls being blocked on www.TicketMaster.com<br />
     However, I change to www.groupon.com and find Chrome blocked the following link:<br />
     https://ads.stickyadstv.com/user-registering?dataProviderId=1025&userId=XlREW9HM4cYAABHQfs0AAABA%26453 <br />
-    From the URL we could easily identify that it is an advertisement and I find it contains many re-directs when I click on it.<br />
+    From the URL we could easily identify that it is an advertisement and I find it contains many re-directs when I click on it.<br /><br /><br />
 # - Part 2 Chaining API Requests
 
 ### TicketMaster API
@@ -70,7 +70,7 @@ global / Environment Variable is necessary because we need it to **pass data to 
 Best practice is that we need to limit the usage of variables and set their scope as small as possible. Global vars may be useful for quick prototyping so that we would not worry much at the beginning. One last thing that I find online, when I only has one enviroment variable, it's better to set it to collection variable to avoid overheads. <br />
    
    #### - What would happen to the second request if the pre-request script is missing or failed to run successfully?
-   If my first test failed, it would fail to set the "keyword" environment variable with correct value. Because I have set up the enviroment, the default value for "keyword" is null. Therefore, the API would take keyword as "null" input. There are corner case checking from their API, so TicketMaster API would set the keyword to default which is "all categoreis".<br /><br />
+   If my first test failed, it would fail to set the "keyword" environment variable with correct value. Because I have set up the enviroment, the default value for "keyword" is null. Therefore, the API would take keyword as "null" input. There are corner case checking from their API, so TicketMaster API would set the keyword to default which is "all categoreis".<br /><br /><br />
     
 # - Part 3 Chaining API Requests with Apica
 
