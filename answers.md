@@ -1,4 +1,4 @@
-# Apica Engineering Internship - Technical Exerciseds           
+# Apica Engineering Internship - Technical Exercise         
 **by Shixian Cui**
 <br />
 <br />
@@ -6,9 +6,24 @@
 <br />
 
 # - Part 1 API Investigation
-  
+    
+   https to **www.ticketmaster.com** from Chrome browser.<br />
+   ![api_call_1](https://github.com/shixianc/hiring-intern/blob/master/screenshots/api_call_1.png)<br />
+   ![api_call_2](https://github.com/shixianc/hiring-intern/blob/master/screenshots/api_call_2.png)<br />
+   ![api_call_3](https://github.com/shixianc/hiring-intern/blob/master/screenshots/api_call_3.png)<br />
+   
+   This call bascially send a HTTPS POST method to **api2.branch.io/v1/open**<br />
+   This API is a **3rd** party call that provides Deep-Linking for mobile device. In our case, TicketMaster uses branch.io API to first detect if user has TicketMaster App on their device. if has, the page would be redirected to a specific location inside the TicketMaster APP, or if not, the page would continue on the browswer.<br /><br />
+   ```{"session_id":"762205744628531442",```
+    ``` "identity_id":"762205744627494358",```
+    ``` "link":"https://ticketmaster-us.app.link?%24identity_id=762205744627494358",```
+   ```  "data":"{\"+clicked_branch_link\":false,\"+is_first_session\":true}",```
+  ```   "browser_fingerprint_id":"760604525505416595",```
+   ```  "has_app":false}``` <br />
+   Above is the response JSON file. We can see the last key/value pair : ```"has_app":false``` implies that I do not have a APP on my device, which makes sense because I am using Chrome on my laptop.
+    
 # - Part 2 Chaining API Requests
- 
+    
 # - Part 3 Chaining API Requests with Apica
   
 # - Part 4 Java Exercise
@@ -38,4 +53,4 @@ From the **Log Files** we could find the output is correct.<br />
 ![import plugin](https://github.com/shixianc/hiring-intern/blob/master/screenshots/log_file.png)
 
 
-It teaches me a lot.  construct execute  deconstruct... 
+# Conclusion 
