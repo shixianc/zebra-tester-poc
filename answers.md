@@ -10,7 +10,7 @@
    https to **www.ticketmaster.com** from Chrome browser.<br />
    ![api_call_1](https://github.com/shixianc/hiring-intern/blob/master/screenshots/api_call_1.png)<br />
    ![api_call_2](https://github.com/shixianc/hiring-intern/blob/master/screenshots/api_call_2.png)<br />
-   ![api_call_3](https://github.com/shixianc/hiring-intern/blob/master/screenshots/api_call_3.png)<br />
+   ![api_call_3](https://github.com/shixianc/hiring-intern/blob/master/screenshots/api_call_3.png)<br /> <br />
    
    This call bascially send a HTTPS POST method to **api2.branch.io/v1/open**<br />
    This API is a **3rd** party call that provides Deep-Linking for mobile device. In our case, TicketMaster uses branch.io API to first detect if user has TicketMaster App on their device. if has, the page would be redirected to a specific location inside the TicketMaster APP, or if not, the page would continue on the browswer.<br /><br />
@@ -19,7 +19,7 @@
     ``` "link":"https://ticketmaster-us.app.link?%24identity_id=762205744627494358",```
    ```  "data":"{\"+clicked_branch_link\":false,\"+is_first_session\":true}",```
   ```   "browser_fingerprint_id":"760604525505416595",```
-   ```  "has_app":false}``` <br />
+   ```  "has_app":false}``` <br /> <br />
    Above is the response JSON file. We can see the last key/value pair : ```"has_app":false``` implies that I do not have a APP on my device, which makes sense because I am using Chrome on my laptop.<br /><br />
     I do not see any calls being blocked on www.TicketMaster.com<br />
     However, I change to www.groupon.com and find Chrome blocked the following link:<br />
@@ -30,7 +30,7 @@
 ### TicketMaster API
    ![ticketmaster](https://github.com/shixianc/hiring-intern/blob/master/screenshots/Screen%20Shot%202020-02-29%20at%201.10.05%20AM.png)<br />
     I signed up at **TicketMaster Developer** and I retrieved the customer key from TicketMaster Discovery API. It is an free API that provides basic Events searching function based on my Geo Location/ distance, etc. <br />
-    I created a simple Java Web Application, and I created a class "SearchItem" that implemented the HttpServlet:<br />
+    I created a simple Java Web Application, and I created a class "SearchItem" that implemented the HttpServlet:<br /> <br />
     ```{```<br />
     ```package rpc;```<br />
     ```@WebServlet("/search")```<br />
@@ -41,7 +41,7 @@
     ```TicketMasterClient client = new TicketMasterClient();```<br />
     ```response.setContentType("application/json");```<br />
 	```response.getWriter().print(obj);```<br />
-    ```}```<br />
+    ```}```<br /> <br />
     Then I created another method to create a http connection with TickerMaster Server. <br />
     ![client](https://github.com/shixianc/hiring-intern/blob/master/screenshots/client.png)<br />
     I set it up at my localhost:8080 port.<br />
@@ -61,16 +61,17 @@
    ![request1](https://github.com/shixianc/hiring-intern/blob/master/screenshots/postman_result.png);<br />
    All test cases passed with **Status 200**. <br />
    ![request1](https://github.com/shixianc/hiring-intern/blob/master/screenshots/request2_reponse_body.png);<br />
-   We can examine the response body which shows that the categories from second reqeust is all "Arts & Theatre". (The whole response body can be found in src/ folder)<br /><br />
+   We can examine the response body which shows that the categories from second reqeust is all "Arts & Theatre". (The whole response body can be found in src/ folder)<br /><br /> <br />
+   
    
 ### follow ups:
    #### - Why is the global/environment variable necessary? 
    	
 global / Environment Variable is necessary because we need it to **pass data to other reqeusts. / or passing data from pre-tests to requests or tests** <br />
-Best practice is that we need to limit the usage of variables and set their scope as small as possible. Global vars may be useful for quick prototyping so that we would not worry much at the beginning. One last thing that I find online, when I only has one enviroment variable, it's better to set it to collection variable to avoid overheads. <br />
+Best practice is that we need to limit the usage of variables and set their scope as small as possible. Global vars may be useful for quick prototyping so that we would not worry much at the beginning. One last thing that I find online, when I only has one enviroment variable, it's better to set it to collection variable to avoid overheads. <br /> <br />
    
    #### - What would happen to the second request if the pre-request script is missing or failed to run successfully?
-   If my first test failed, it would fail to set the "keyword" environment variable with correct value. Because I have set up the enviroment, the default value for "keyword" is null. Therefore, the API would take keyword as "null" input. There are corner case checking from their API, so TicketMaster API would set the keyword to default which is "all categoreis".<br /><br /><br />
+   If my first test failed, it would fail to set the "keyword" environment variable with correct value. Because I have set up the enviroment, the default value for "keyword" is null. Therefore, the API would take keyword as "null" input. There are corner case checking from their API, so TicketMaster API would set the keyword to default which is "all categoreis".<br /><br /><br /> <br /> <br />
     
 # - Part 3 Chaining API Requests with Apica
    I added my Postman Collections manually to Zebra IDE.<br />
@@ -90,13 +91,15 @@ Best practice is that we need to limit the usage of variables and set their scop
     <br />
    ![script](https://github.com/shixianc/hiring-intern/blob/master/screenshots/check200.png)<br />
    I also set the **Response Verification** to confirm Status 200. <br /><br />
+   ![request1](https://github.com/shixianc/hiring-intern/blob/master/screenshots/result.png) <br /> <br /> <br />
+   
    
    ### Followup: Describe how can users more easily manage multiple variables accross multiple API scripts comparitively with Zebra IDE? 
    
   Users can easily extract variables from any API response content, or simply created any variables.<br />
   All these variables are stored and listed in the upper-right corner **"Variables"** section. <br />
   User can also easily add to any **Inline Code** or even **Java Plugin!** as input/output(I found this VERY helpful!) <br />
-  Compared to Postman, Zebra IDE has a excellent UI experience and visualization, and it provides much more efficiency and flexibility to do complicated jobs. <br />
+  Compared to Postman, Zebra IDE has a excellent UI experience and visualization, and it provides much more efficiency and flexibility to do complicated jobs. <br /> <br /> <br /> <br />
   
 # - Part 4 Java Exercise
 
