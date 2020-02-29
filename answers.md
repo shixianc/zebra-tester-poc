@@ -79,7 +79,7 @@ Best practice is that we need to limit the usage of variables and set their scop
    ### explanation:
    My Zebra Script consists of 2 Page Break and each contains 1 URL.<br />
    I extracted a variable *keyword* from *Content* and set the JSON path to retreive the first *"category"* found. (same as PostMan Collection above).<br />
-   However, the String var that I extracted is **"Art & Theatre"** which **contains spaces**, that leads to HTTP 505 Error. I debugged in different ways and found out the spaces is the issue. Previously PostMan did not catch this problem so I assume Postman has some internal function to format my variable input automatically. <br />
+   However, the String var that I extracted is **"Art & Theatre"** which **contains spaces**, that leads to HTTP 505 Error. I debugged in different ways and found out the spaces is the issue. Previously PostMan did not catch this problem so I assume Postman has some internal function to format my variable input automatically. <br /><br />
    Due to this issue, I created an **Inline Code** between two URLs requests.  <br /> 
    @Input: String Variable **"keyword"** extracted from first HTTP request.<br /> 
    @Output: a Global Varibale **"keywordTrimed"** to replace with the parameter "term" in the second HTTP request.<br /> 
