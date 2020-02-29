@@ -1,0 +1,162 @@
++----------------------------------------------------------------+
+| Welcome to the ZebraTester Load Test Program.                  |
+| Additional help available with program argument "-help"        |
+| Procedure Copyright by Ingenieurbuero David Fischer AG,        |
+| a company of the Apica group. All rights reserved.             |
++----------------------------------------------------------------+
+29 Feb 2020 19:30:12.060 | main | Elliptic Curves Provider added
+
+Result File : GetEvents_29Feb20_193012_1u.prxres
+
+# concurrent users = 1
+# max. parallel threads per user = [serial execution order for all URLs]
+# planned test duration = 60 seconds
+# http request timeout = 30 seconds
+# startup delay = 200 milliseconds
+# statistic sampling interval = 5 seconds
+# additional sampling rate per web page call = 100 %
+# additional sampling rate per url call = 20 %
+# extended sampling per url call = disabled (recommended)
+# max loops per user = 1 loops
+# http protocol version = v1.1
+# ssl protocol version = all
+# ssl session cache timeout = 300 seconds
+# result file = GetEvents_29Feb20_193012_1u.prxres
+# debug loops
+# debug http protocol headers
+# debug http content data
+# compiled product version = V5.5-F
+# executed product version = V5.5-F
+>>> ----- ---------------------------------------------------- ----- <<<
+>>>       REMOTE CONTROLLED TEST STARTED - ON LOCAL PORT 40006       <<<
+>>> ----- ---------------------------------------------------- ----- <<<
+
+# cluster member local id = 0
+# total number of cluster members = 1
+global var <<< keywordTrimed = null
+
+# --- thread T000000 created --- 29 Feb 2020 19:30:12.185 ---
+T000000 --- loop started --- 29 Feb 2020 19:30:12.185 ---
+T000000
+T000000 <<< keyword = null
+T000000
+T000000
+T000000 # Page #1: getEvents
+T000000 # ------------------
+T000000
+T000000 [1] GET http://localhost:8080/Jupiter/search?lat=34.82&lon=-118.42 ...
+T000000-URL >>> req header: GET /Jupiter/search?lat=34.82&lon=-118.42 HTTP/1.1
+T000000-URL >>> req header: Accept: */*
+T000000-URL >>> req header: Accept-Encoding: gzip, deflate
+T000000-URL >>> req header: Connection: Keep-Alive
+T000000-URL >>> req header: Host: localhost
+T000000-URL >>> req header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Safari/605.1.15
+T000000-URL <<< rcv header: HTTP/1.1 200
+T000000-URL <<< rcv header: Content-Type: application/json;charset=ISO-8859-1
+T000000-URL <<< rcv header: Content-Length: 7466
+T000000-URL <<< rcv header: Date: Sat, 29 Feb 2020 18:30:20 GMT
+T000000-URL <<< rcv header: Keep-Alive: timeout=20
+T000000-URL <<< rcv header: Connection: keep-alive
+T000000-URL <<< rcv content: 1 byte received
+T000000-URL <<< rcv content: 7465 bytes received
+T000000    200 (OK), APPLICATION/JSON, 7466 bytes, 4307 ms
+T000000 [{"address":"6233 Hollywood Blvd.,Los Angeles","distance":49.9,"item_id":"vvG1iZ4wUwbwOA","image_url":"https://s1.ticketm.net/dam/a/300/88bcb3d0-aa78-428d-ad10-52514ea72300_570131_RETINA_PORTRAIT_3_2.jpg","name":"Hamilton (Touring)","rating":0,"categories":["Arts & Theatre"],"url":"https://www.ticketmaster.com/hamilton-touring-los-angeles-california-03-12-2020/event/0B00572DB2632805"},{"address":"245 East Green Street,Pasadena","distance":49.23,"item_id":"vvG10Z4RTQ5UnF","image_url":"https://s1.ticketm.net/dam/a/9d7/d6a4ea2e-7985-42a5-9019-50d64d22f9d7_603461_TABLET_LANDSCAPE_LARGE_16_9.jpg","name":"The Spinners","rating":0,"categories":["Music"],"url":"https://www.ticketmaster.com/the-spinners-pasadena-california-05-03-2020/event/090056FFDA2F6A88"},{"address":"6233 Hollywood Blvd.,Los Angeles","distance":49.9,"item_id":"vvG1iZ4wUUuwsR","image_url":"https://s1.ticketm.net/dam/a/300/88bcb3d0-aa78-428d-ad10-52514ea72300_570131_RETINA_PORTRAIT_3_2.jpg","name":"Hamilton (Touring)","rating":0,"categories":["Arts & Theatre"],"url":"https://www.ticketmaster.com/hamilton-touring-los-angeles-california-08-15-2020/event/0B00572DB6372C6F"},{"address":"2301 N Highland Ave,Hollywood","distance":49.16,"item_id":"vvG1iZpA3HWfnc","image_url":"https://s1.ticketm.net/dam/a/41d/d21e3af4-fb17-485b-ab58-aedb2142d41d_996391_RETINA_PORTRAIT_16_9.jpg","name":"New Order & Pet Shop Boys - The Unity Tour","rating":0,"categories":["Music"],"url":"https://www.ticketmaster.com/new-order-pet-shop-boys-the-hollywood-california-10-02-2020/event/0B005854BCF54AAD"},{"address":"1001 Rose Bowl Drive,Pasadena","distance":47.72,"item_id":"vvG1iZpdkR4xT-","image_url":"https://s1.ticketm.net/dam/a/284/a8f5a097-0fad-40c7-906f-56b4e17cf284_1273321_RECOMENDATION_16_9.jpg","name":"BTS MAP OF THE SOUL TOUR","rating":0,"categories":["Music"],"url":"https://www.ticketmaster.com/bts-map-of-the-soul-tour-pasadena-california-05-02-2020/event/0B005831AF562FE1"},{"address":"1001 Rose Bowl Drive,Pasadena","distance":47.72,"item_id":"vvG1iZpdkY1NZz","image_url":"https://s1.ticketm.net/dam/a/284/a8f5a097-0fad-40c7-906f-56b4e17cf284_1273321_RECOMENDATION_16_9.jpg","name":"BTS MAP OF THE SOUL TOUR","rating":0,"categories":["Music"],"url":"https://www.ticketmaster.com/bts-map-of-the-soul-tour-pasadena-california-05-03-2020/event/0B005831B02A3038"},{"address":"2301 N Highland Ave,Hollywood","distance":49.16,"item_id":"vvG1iZ4z5QkeHg","image_url":"https://s1.ticketm.net/dam/a/a37/c7587f00-6b3e-46d4-922d-e90fee0cba37_760711_RETINA_LANDSCAPE_16_9.jpg","name":"Russ","rating":0,"categories":["Music"],"url":"https://www.ticketmaster.com/russ-hollywood-california-05-08-2020/event/0B005782DA182F35"},{"address":"6801 Hollywood Blvd.,Hollywood","distance":49.84,"item_id":"vv1AaZAONGkd_BPOP","image_url":"https://s1.ticketm.net/dbimages/378732a.jpg","name":"Outlander","rating":0,"categories":["Arts & Theatre"],"url":"https://www.ticketmaster.com/outlander-hollywood-california-03-19-2020/event/09005823D9EA5825"},{"address":"6801 Hollywood Blvd.,Hollywood","distance":49.84,"item_id":"vv1AaZAONGkd_X4-1","image_url":"https://s1.ticketm.net/dbimages/378736a.jpg","name":"Schitt's Creek","rating":0,"categories":["Arts & Theatre"],"url":"https://www.ticketmaster.com/schitts-creek-hollywood-california-03-22-2020/event/09005823D9F9584A"},{"address":"6801 Hollywood Blvd.,Hollywood","distance":49.84,"item_id":"vv1AaZAONGkd_z4Of","image_url":"https://s1.ticketm.net/dam/a/638/d72ac94b-b8af-4815-bb18-b884b5c3e638_943301_TABLET_LANDSCAPE_LARGE_16_9.jpg","name":"The Boys","rating":0,"categories":["Arts & Theatre"],"url":"https://www.ticketmaster.com/the-boys-hollywood-california-03-15-2020/event/09005823D9E15814"},{"address":"6801 Hollywood Blvd.,Hollywood","distance":49.84,"item_id":"vv1AaZAONGkd_W4OD","image_url":"https://s1.ticketm.net/dam/a/638/d72ac94b-b8af-4815-bb18-b884b5c3e638_943301_TABLET_LANDSCAPE_LARGE_16_9.jpg","name":"The Mandalorian","rating":0,"categories":["Arts & Theatre"],"url":"https://www.ticketmaster.com/the-mandalorian-hollywood-california-03-22-2020/event/09005823D9F5583B"},{"address":"2301 N Highland Ave,Hollywood","distance":49.16,"item_id":"vvG1iZp79CBVqv","image_url":"https://s1.ticketm.net/dam/a/14b/5d967e1e-df58-4b6f-b872-223203a4e14b_890641_RETINA_LANDSCAPE_16_9.jpg","name":"Backstreet Boys: DNA World Tour","rating":0,"categories":["Music"],"url":"https://www.ticketmaster.com/backstreet-boys-dna-world-tour-hollywood-california-10-09-2020/event/0B005845CEEB4741"},{"address":"6801 Hollywood Blvd.,Hollywood","distance":49.84,"item_id":"vv1AaZAONGkd_DAOi","image_url":"https://s1.ticketm.net/dam/a/638/d72ac94b-b8af-4815-bb18-b884b5c3e638_943301_TABLET_LANDSCAPE_LARGE_16_9.jpg","name":"Curb Your Enthusiasm","rating":0,"categories":["Arts & Theatre"],"url":"https://www.ticketmaster.com/curb-your-enthusiasm-hollywood-california-03-20-2020/event/09005823D9EC582C"},{"address":"6801 Hollywood Blvd.,Hollywood","distance":49.84,"item_id":"vv1AaZAONGkd_DgOS","image_url":"https://s1.ticketm.net/dam/a/638/d72ac94b-b8af-4815-bb18-b884b5c3e638_943301_TABLET_LANDSCAPE_LARGE_16_9.jpg","name":"Ozark","rating":0,"categories":["Arts & Theatre"],"url":"https://www.ticketmaster.com/ozark-hollywood-california-03-21-2020/event/09005823D9EF5833"},{"address":"6801 Hollywood Blvd.,Hollywood","distance":49.84,"item_id":"vv1AaZAONGkd_U4O7","image_url":"https://s1.ticketm.net/dbimages/378726a.jpg","name":"Modern Family","rating":0,"categories":["Arts & Theatre"],"url":"https://www.ticketmaster.com/modern-family-hollywood-california-03-13-2020/event/09005823D9D95804"},{"address":"6801 Hollywood Blvd.,Hollywood","distance":49.84,"item_id":"vv1AaZAONGkd_ygOq","image_url":"https://s1.ticketm.net/dam/a/638/d72ac94b-b8af-4815-bb18-b884b5c3e638_943301_TABLET_LANDSCAPE_LARGE_16_9.jpg","name":"Star Trek: Picard","rating":0,"categories":["Arts & Theatre"],"url":"https://www.ticketmaster.com/star-trek-picard-hollywood-california-03-18-2020/event/09005823D9E7581D"},{"address":"6801 Hollywood Blvd.,Hollywood","distance":49.84,"item_id":"vv1AaZAONGkdQo4xI","image_url":"https://s1.ticketm.net/dam/a/638/d72ac94b-b8af-4815-bb18-b884b5c3e638_943301_TABLET_LANDSCAPE_LARGE_16_9.jpg","name":"Showrunner Pass","rating":0,"categories":["Arts & Theatre"],"url":"https://www.ticketmaster.com/showrunner-pass-hollywood-california-03-13-2020/event/09005823DA4558A8"},{"address":"6801 Hollywood Blvd.,Hollywood","distance":49.84,"item_id":"vv1AaZAONGkdQFP-m","image_url":"https://s1.ticketm.net/dam/a/638/d72ac94b-b8af-4815-bb18-b884b5c3e638_943301_TABLET_LANDSCAPE_LARGE_16_9.jpg","name":"Studio Pass A","rating":0,"categories":["Arts & Theatre"],"url":"https://www.ticketmaster.com/studio-pass-a-hollywood-california-03-13-2020/event/09005823DA22586E"},{"address":"6801 Hollywood Blvd.,Hollywood","distance":49.84,"item_id":"vv1AaZAONGkd_MgO3","image_url":"https://s1.ticketm.net/dbimages/378730a.jpg","name":"One Day at a Time","rating":0,"categories":["Arts & Theatre"],"url":"https://www.ticketmaster.com/one-day-at-a-time-hollywood-california-03-14-2020/event/09005823D9DF5812"},{"address":"6801 Hollywood Blvd.,Hollywood","distance":49.84,"item_id":"vv1AaZAONGkd_HPOM","image_url":"https://s1.ticketm.net/dam/a/638/d72ac94b-b8af-4815-bb18-b884b5c3e638_943301_TABLET_LANDSCAPE_LARGE_16_9.jpg","name":"Dead To Me","rating":0,"categories":["Arts & Theatre"],"url":"https://www.ticketmaster.com/dead-to-me-hollywood-california-03-21-2020/event/09005823D9F25837"}]
+T000000 <<< keyword = Arts & Theatre
+T000000 Page 1 Time = 4533 ms
+T000000
+T000000
+T000000 # Page #2: getWithKeyword
+T000000 # -----------------------
+T000000 Executing inline script "Trim Spaces"
+T000000 <<< keywordTrimed = Arts&Theatre
+T000000 Trim Spaces: 
+T000000
+T000000 [3] GET http://localhost:8080/Jupiter/search?lat=34.82&lon=-118.42&term=Arts&Theatre ...
+T000000-URL >>> req header: GET /Jupiter/search?lat=34.82&lon=-118.42&term=Arts&Theatre HTTP/1.1
+T000000-URL >>> req header: Accept: */*
+T000000-URL >>> req header: Accept-Encoding: gzip, deflate
+T000000-URL >>> req header: Connection: Keep-Alive
+T000000-URL >>> req header: Host: localhost
+T000000-URL >>> req header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Safari/605.1.15
+T000000-URL <<< rcv header: HTTP/1.1 200
+T000000-URL <<< rcv header: Content-Type: application/json;charset=ISO-8859-1
+T000000-URL <<< rcv header: Content-Length: 7626
+T000000-URL <<< rcv header: Date: Sat, 29 Feb 2020 18:30:28 GMT
+T000000-URL <<< rcv header: Keep-Alive: timeout=20
+T000000-URL <<< rcv header: Connection: keep-alive
+T000000-URL <<< rcv content: 1 byte received
+T000000-URL <<< rcv content: 7625 bytes received
+T000000    200 (OK), APPLICATION/JSON, 7626 bytes, 4341 ms
+T000000 [{"address":"6233 Hollywood Blvd.,Los Angeles","distance":49.9,"item_id":"vvG1iZ4wUwbwOA","image_url":"https://s1.ticketm.net/dam/a/300/88bcb3d0-aa78-428d-ad10-52514ea72300_570131_RETINA_PORTRAIT_3_2.jpg","name":"Hamilton (Touring)","rating":0,"categories":["Arts & Theatre"],"url":"https://www.ticketmaster.com/hamilton-touring-los-angeles-california-03-12-2020/event/0B00572DB2632805"},{"address":"6233 Hollywood Blvd.,Los Angeles","distance":49.9,"item_id":"vvG1iZ4wUwj3O1","image_url":"https://s1.ticketm.net/dam/a/300/88bcb3d0-aa78-428d-ad10-52514ea72300_570131_RETINA_PORTRAIT_3_2.jpg","name":"Hamilton (Touring)","rating":0,"categories":["Arts & Theatre"],"url":"https://www.ticketmaster.com/hamilton-touring-los-angeles-california-03-14-2020/event/0B00572DB271280A"},{"address":"6233 Hollywood Blvd.,Los Angeles","distance":49.9,"item_id":"vvG1iZ4wUSJ3EU","image_url":"https://s1.ticketm.net/dam/a/300/88bcb3d0-aa78-428d-ad10-52514ea72300_570131_RETINA_PORTRAIT_3_2.jpg","name":"Hamilton (Touring)","rating":0,"categories":["Arts & Theatre"],"url":"https://www.ticketmaster.com/hamilton-touring-los-angeles-california-05-03-2020/event/0B00572DB39929F6"},{"address":"6233 Hollywood Blvd.,Los Angeles","distance":49.9,"item_id":"vvG1iZ4wUVpxlP","image_url":"https://s1.ticketm.net/dam/a/300/88bcb3d0-aa78-428d-ad10-52514ea72300_570131_RETINA_PORTRAIT_3_2.jpg","name":"Hamilton (Touring)","rating":0,"categories":["Arts & Theatre"],"url":"https://www.ticketmaster.com/hamilton-touring-los-angeles-california-06-07-2020/event/0B00572DB45A2AE5"},{"address":"6233 Hollywood Blvd.,Los Angeles","distance":49.9,"item_id":"vvG1iZ4wUUuwsR","image_url":"https://s1.ticketm.net/dam/a/300/88bcb3d0-aa78-428d-ad10-52514ea72300_570131_RETINA_PORTRAIT_3_2.jpg","name":"Hamilton (Touring)","rating":0,"categories":["Arts & Theatre"],"url":"https://www.ticketmaster.com/hamilton-touring-los-angeles-california-08-15-2020/event/0B00572DB6372C6F"},{"address":"18111 Nordhoff Street,Northridge","distance":40.81,"item_id":"vvG1iZ4gEUldgN","image_url":"https://s1.ticketm.net/dam/a/14e/97caef55-bd87-48c9-b256-e2fd4356a14e_1180631_RECOMENDATION_16_9.jpg","name":"Shen Yun 2020 World Tour","rating":0,"categories":["Arts & Theatre"],"url":"https://www.ticketmaster.com/shen-yun-2020-world-tour-northridge-california-04-22-2020/event/0B005759F6AC3D63"},{"address":"18111 Nordhoff Street,Northridge","distance":40.81,"item_id":"vvG1iZ4gEDSNB7","image_url":"https://s1.ticketm.net/dam/a/14e/97caef55-bd87-48c9-b256-e2fd4356a14e_1180631_RECOMENDATION_16_9.jpg","name":"Shen Yun 2020 World Tour","rating":0,"categories":["Arts & Theatre"],"url":"https://www.ticketmaster.com/shen-yun-2020-world-tour-northridge-california-04-23-2020/event/0B005759FBCE3E84"},{"address":"18111 Nordhoff Street,Northridge","distance":40.81,"item_id":"vvG1iZ4gEDVKBu","image_url":"https://s1.ticketm.net/dam/a/14e/97caef55-bd87-48c9-b256-e2fd4356a14e_1180631_RECOMENDATION_16_9.jpg","name":"Shen Yun 2020 World Tour","rating":0,"categories":["Arts & Theatre"],"url":"https://www.ticketmaster.com/shen-yun-2020-world-tour-northridge-california-04-24-2020/event/0B005759FBD13E8D"},{"address":"18111 Nordhoff Street,Northridge","distance":40.81,"item_id":"vvG1iZ4gEDVSBb","image_url":"https://s1.ticketm.net/dam/a/14e/97caef55-bd87-48c9-b256-e2fd4356a14e_1180631_RECOMENDATION_16_9.jpg","name":"Shen Yun 2020 World Tour","rating":0,"categories":["Arts & Theatre"],"url":"https://www.ticketmaster.com/shen-yun-2020-world-tour-northridge-california-04-25-2020/event/0B005759FBD33E98"},{"address":"18111 Nordhoff Street,Northridge","distance":40.81,"item_id":"vvG1iZ4gEDgNBN","image_url":"https://s1.ticketm.net/dam/a/14e/97caef55-bd87-48c9-b256-e2fd4356a14e_1180631_RECOMENDATION_16_9.jpg","name":"Shen Yun 2020 World Tour","rating":0,"categories":["Arts & Theatre"],"url":"https://www.ticketmaster.com/shen-yun-2020-world-tour-northridge-california-04-25-2020/event/0B005759FBD63EA3"},{"address":"18111 Nordhoff Street,Northridge","distance":40.81,"item_id":"vvG1iZ4gEDUNBI","image_url":"https://s1.ticketm.net/dam/a/14e/97caef55-bd87-48c9-b256-e2fd4356a14e_1180631_RECOMENDATION_16_9.jpg","name":"Shen Yun 2020 World Tour","rating":0,"categories":["Arts & Theatre"],"url":"https://www.ticketmaster.com/shen-yun-2020-world-tour-northridge-california-04-26-2020/event/0B005759FBDA3EA8"},{"address":"6801 Hollywood Blvd.,Hollywood","distance":49.84,"item_id":"vv1AaZAONGkd_BPOP","image_url":"https://s1.ticketm.net/dbimages/378732a.jpg","name":"Outlander","rating":0,"categories":["Arts & Theatre"],"url":"https://www.ticketmaster.com/outlander-hollywood-california-03-19-2020/event/09005823D9EA5825"},{"address":"6801 Hollywood Blvd.,Hollywood","distance":49.84,"item_id":"vv1AaZAONGkd_X4-1","image_url":"https://s1.ticketm.net/dbimages/378736a.jpg","name":"Schitt's Creek","rating":0,"categories":["Arts & Theatre"],"url":"https://www.ticketmaster.com/schitts-creek-hollywood-california-03-22-2020/event/09005823D9F9584A"},{"address":"6801 Hollywood Blvd.,Hollywood","distance":49.84,"item_id":"vv1AaZAONGkd_z4Of","image_url":"https://s1.ticketm.net/dam/a/638/d72ac94b-b8af-4815-bb18-b884b5c3e638_943301_TABLET_LANDSCAPE_LARGE_16_9.jpg","name":"The Boys","rating":0,"categories":["Arts & Theatre"],"url":"https://www.ticketmaster.com/the-boys-hollywood-california-03-15-2020/event/09005823D9E15814"},{"address":"6801 Hollywood Blvd.,Hollywood","distance":49.84,"item_id":"vv1AaZAONGkd_W4OD","image_url":"https://s1.ticketm.net/dam/a/638/d72ac94b-b8af-4815-bb18-b884b5c3e638_943301_TABLET_LANDSCAPE_LARGE_16_9.jpg","name":"The Mandalorian","rating":0,"categories":["Arts & Theatre"],"url":"https://www.ticketmaster.com/the-mandalorian-hollywood-california-03-22-2020/event/09005823D9F5583B"},{"address":"6801 Hollywood Blvd.,Hollywood","distance":49.84,"item_id":"vv1AaZAONGkd_DgOS","image_url":"https://s1.ticketm.net/dam/a/638/d72ac94b-b8af-4815-bb18-b884b5c3e638_943301_TABLET_LANDSCAPE_LARGE_16_9.jpg","name":"Ozark","rating":0,"categories":["Arts & Theatre"],"url":"https://www.ticketmaster.com/ozark-hollywood-california-03-21-2020/event/09005823D9EF5833"},{"address":"6801 Hollywood Blvd.,Hollywood","distance":49.84,"item_id":"vv1AaZAONGkd_DAOi","image_url":"https://s1.ticketm.net/dam/a/638/d72ac94b-b8af-4815-bb18-b884b5c3e638_943301_TABLET_LANDSCAPE_LARGE_16_9.jpg","name":"Curb Your Enthusiasm","rating":0,"categories":["Arts & Theatre"],"url":"https://www.ticketmaster.com/curb-your-enthusiasm-hollywood-california-03-20-2020/event/09005823D9EC582C"},{"address":"6801 Hollywood Blvd.,Hollywood","distance":49.84,"item_id":"vv1AaZAONGkd_U4O7","image_url":"https://s1.ticketm.net/dbimages/378726a.jpg","name":"Modern Family","rating":0,"categories":["Arts & Theatre"],"url":"https://www.ticketmaster.com/modern-family-hollywood-california-03-13-2020/event/09005823D9D95804"},{"address":"6801 Hollywood Blvd.,Hollywood","distance":49.84,"item_id":"vv1AaZAONGkd_ygOq","image_url":"https://s1.ticketm.net/dam/a/638/d72ac94b-b8af-4815-bb18-b884b5c3e638_943301_TABLET_LANDSCAPE_LARGE_16_9.jpg","name":"Star Trek: Picard","rating":0,"categories":["Arts & Theatre"],"url":"https://www.ticketmaster.com/star-trek-picard-hollywood-california-03-18-2020/event/09005823D9E7581D"},{"address":"6801 Hollywood Blvd.,Hollywood","distance":49.84,"item_id":"vv1AaZAONGkdQo4xI","image_url":"https://s1.ticketm.net/dam/a/638/d72ac94b-b8af-4815-bb18-b884b5c3e638_943301_TABLET_LANDSCAPE_LARGE_16_9.jpg","name":"Showrunner Pass","rating":0,"categories":["Arts & Theatre"],"url":"https://www.ticketmaster.com/showrunner-pass-hollywood-california-03-13-2020/event/09005823DA4558A8"}]
+T000000 Page 2 Time = 4348 ms
+T000000
+T000000 --- loop passed ---  29 Feb 2020 19:30:28.158 --- [remaining loops = 0]
+# 
+# 
+# = =========================
+# = === Final Test Result ===
+# = =========================
+# 
+# 
+# TEST: GetEvents
+# ---------------
+# 
+# *** Warning: SSL/TLS option -ecc enabled ***
+# *** Warning: Debug loops enabled ***
+# *** Warning: Debug HTTP protocol headers enabled ***
+# *** Warning: Debug HTTP content data enabled ***
+# 
+# 
+# --- test parameter ---
+# concurrent users: 1
+# planned test duration: 60 seconds
+# planned loops per user: 1
+# http request timeout: 30 seconds
+# startup delay: 200 milliseconds
+# http protocol version: V1.1
+# statistic sampling interval: 5 seconds
+# additional sampling rate per web page call: 100 %
+# additional sampling rate per url call: 20 %
+# extended sampling level per url call: disabled (recommended)
+# result file: GetEvents_29Feb20_193012_1u.prxres
+# 
+# --- test date ---
+# test start:    29 Feb 2020 19:30:12
+# test end:      29 Feb 2020 19:30:28
+# test duration: 17 sec
+# 
+# --- test sequence ---
+# [0] Page #1: getEvents
+# [1] - GET http://localhost:8080/Jupiter/search?lat=34.82&lon=-118.42
+# [2] Page #2: getWithKeyword
+# [3] - GET http://localhost:8080/Jupiter/search?lat=34.82&lon=-118.42&term=Arts&Theatre
+# 
+# --- result details ---
+# [0] Page #1: getEvents (3'000 ms delay)
+# [1]   passed= 1, failed= 0, average time= 4'307 ms, min= 4'307 ms, max= 4'307 ms, size= 7'913 bytes
+# [2] Page #2: getWithKeyword (3'000 ms delay)
+# [3]   passed= 1, failed= 0, average time= 4'341 ms, min= 4'341 ms, max= 4'341 ms, size= 8'091 bytes
+# 
+# --- summary ---
+# url calls:
+#  - total passed= 2
+#  - total failed= 0
+#  - failure rate= 0.0 %
+#  - network connect time= 2 ms
+#  - recycled network connections= 50.00 %
+# session results per single user - per loop (averages):
+#  - session time= 14'648 ms (2 pages with total 6'000 ms delay)
+#  - sum of url response time per session= 8'648 ms (2 urls)
+#  - transmitted data= 16'004 bytes
+#  - session throughput= 1.09 kbytes/sec
+# loadtest summary:
+#  - total 0.12 web transactions per second
+#  - total 0.96 kbytes/sec network throughput over http
+#  - session failure rate= 0.0 %
+# 
+
+>>> ----- ------------------------------------------------------- ----- <<<
+>>>       REMOTE CONTROLLED TEST DONE - GOODBYE AND GOOD LUCK!          <<<
+>>> ----- ------------------------------------------------------- ----- <<<
+
+Result File: GetEvents_29Feb20_193012_1u.prxres
