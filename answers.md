@@ -21,7 +21,10 @@
   ```   "browser_fingerprint_id":"760604525505416595",```
    ```  "has_app":false}``` <br />
    Above is the response JSON file. We can see the last key/value pair : ```"has_app":false``` implies that I do not have a APP on my device, which makes sense because I am using Chrome on my laptop.
-    
+    I do not see any calls being blocked on www.TicketMaster.com<br />
+    However, I change to www.groupon.com and find Chrome blocked the following link:<br />
+    https://ads.stickyadstv.com/user-registering?dataProviderId=1025&userId=XlREW9HM4cYAABHQfs0AAABA%26453 <br />
+    From the URL we could easily identify that it is an advertisement and I find it contains many re-directs when I click on it.
 # - Part 2 Chaining API Requests
     
 # - Part 3 Chaining API Requests with Apica
