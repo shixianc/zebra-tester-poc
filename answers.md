@@ -1,7 +1,12 @@
-# Apica Engineering Internship - Technical Exerciseds
+# Apica Engineering Internship - Technical Exerciseds           
+## by Shixian Cui
+<br />
+<br />
+<br />
+<br />
 
 # - Part 1 API Investigation
- 
+  
 # - Part 2 Chaining API Requests
  
 # - Part 3 Chaining API Requests with Apica
