@@ -73,7 +73,30 @@ Best practice is that we need to limit the usage of variables and set their scop
    If my first test failed, it would fail to set the "keyword" environment variable with correct value. Because I have set up the enviroment, the default value for "keyword" is null. Therefore, the API would take keyword as "null" input. There are corner case checking from their API, so TicketMaster API would set the keyword to default which is "all categoreis".<br /><br /><br />
     
 # - Part 3 Chaining API Requests with Apica
-
+   I added my Postman Collections manually to Zebra IDE.<br />
+   ![script](https://github.com/shixianc/hiring-intern/blob/master/screenshots/general_script.png)<br />
+   ### explanation:
+   My Zebra Script consists of 2 Page Break and each contains 1 URL.<br />
+   I extracted a variable *keyword* from *Content* and set the JSON path to retreive the first *"category"* found. (same as PostMan Collection above).<br />
+   However, the String var that I extracted is **"Art & Theatre"** which **contains spaces**, that leads to HTTP 505 Error. I debugged in different ways and found out the spaces is the issue. Previously PostMan did not catch this problem so I assume Postman has some internal function to format my variable input automatically. <br />
+   Due to this issue, I created an **Inline Code** between two URLs requests.  <br /> 
+   @Input: String Variable **"keyword"** extracted from first HTTP request.<br /> 
+   @Output: a Global Varibale **"keywordTrimed"** to replace with the parameter "term" in the second HTTP request.<br /> 
+   ![script](https://github.com/shixianc/hiring-intern/blob/master/screenshots/inlinecode.png)<br />
+    <br />
+   And it works as expected.<br />
+    <br />
+   ![script](https://github.com/shixianc/hiring-intern/blob/master/screenshots/log_trim.png)<br />
+    <br />
+   ![script](https://github.com/shixianc/hiring-intern/blob/master/screenshots/check200.png)<br />
+   I also set the **Response Verification** to confirm Status 200. <br /><br />
+   
+   ### Followup: Describe how can users more easily manage multiple variables accross multiple API scripts comparitively with Zebra IDE? 
+   
+  Users can easily extract variables from any API response content, or simply created any variables.<br />
+  All these variables are stored and listed in the upper-right corner **"Variables"** section. <br />
+  User can also easily add to any **Inline Code** or even **Java Plugin!** as input/output(I found this VERY helpful!) <br />
+  Compared to Postman, Zebra IDE has a excellent UI experience and visualization, and it provides much more efficiency and flexibility to do complicated jobs. <br />
   
 # - Part 4 Java Exercise
 
@@ -101,5 +124,3 @@ It runs successfully
 From the **Log Files** we could find the output is correct.<br />
 ![import plugin](https://github.com/shixianc/hiring-intern/blob/master/screenshots/log_file.png)
 
-
-# Conclusion 
