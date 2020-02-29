@@ -20,12 +20,48 @@
    ```  "data":"{\"+clicked_branch_link\":false,\"+is_first_session\":true}",```
   ```   "browser_fingerprint_id":"760604525505416595",```
    ```  "has_app":false}``` <br />
-   Above is the response JSON file. We can see the last key/value pair : ```"has_app":false``` implies that I do not have a APP on my device, which makes sense because I am using Chrome on my laptop.
+   Above is the response JSON file. We can see the last key/value pair : ```"has_app":false``` implies that I do not have a APP on my device, which makes sense because I am using Chrome on my laptop.<br /><br />
     I do not see any calls being blocked on www.TicketMaster.com<br />
     However, I change to www.groupon.com and find Chrome blocked the following link:<br />
     https://ads.stickyadstv.com/user-registering?dataProviderId=1025&userId=XlREW9HM4cYAABHQfs0AAABA%26453 <br />
-    From the URL we could easily identify that it is an advertisement and I find it contains many re-directs when I click on it.
+    From the URL we could easily identify that it is an advertisement and I find it contains many re-directs when I click on it.<br />
 # - Part 2 Chaining API Requests
+
+### TicketMaster API
+   ![ticketmaster](https://github.com/shixianc/hiring-intern/blob/master/screenshots/Screen%20Shot%202020-02-29%20at%201.10.05%20AM.png)<br />
+    I signed up at **TicketMaster Developer** and I retrieved the customer key from TicketMaster Discovery API. It is an free API that provides basic Events searching function based on my Geo Location/ distance, etc. <br />
+    I created a simple Java Web Application, and I created a class "SearchItem" that implemented the HttpServlet:<br />
+    ```{```<br />
+    ```package rpc;```<br />
+    ```@WebServlet("/search")```<br />
+    ```public class SearchItem extends HttpServlet {```<br />
+    ```protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {```<br />
+    ```double lat = Double.parseDouble(request.getParameter("lat")); ```<br />
+    ```double lon = Double.parseDouble(request.getParameter("lon"));```<br />
+    ```TicketMasterClient client = new TicketMasterClient();```<br />
+    ```response.setContentType("application/json");```<br />
+	```response.getWriter().print(obj);```<br />
+    ```}```<br />
+    Then I created another method to create a http connection with TickerMaster Server. <br />
+    ![client](https://github.com/shixianc/hiring-intern/blob/master/screenshots/client.png)<br />
+    I set it up at my localhost:8080 port.<br />
+    I used PostMan to test it with Geo-location set to Apica Systems Office @ Santa Monica: **1250 6th St, Santa Monica, CA.**
+    I googled its Latitude is **34.82** and Longitude **-118.42** <br />
+    by using PostMan GET: http://localhost:8080/Jupiter/search?lat=34.82&lon=-118.42:
+    ![post_apica](https://github.com/shixianc/hiring-intern/blob/master/screenshots/post_apica.png)<br />
+    And I get a JSON file that contains an array of JSON objects, and each with multiple elements such as address, name, url,etc.<br />
+    ![tour](https://github.com/shixianc/hiring-intern/blob/master/screenshots/tour.png)<br /><br /><br />
+### Requests Chaining with PostMan Collections
+   I created a PostMan collection called: **Ticketmaster** <br />
+   ![request1](https://github.com/shixianc/hiring-intern/blob/master/screenshots/request1.png);<br />
+   ![request1](https://github.com/shixianc/hiring-intern/blob/master/screenshots/request2.png);<br />
+   From the first response, I extract **"categories"** from one JSON Object inside JSON Array, and then set an environmentVariable called **"keyword"** with this "categories" element. <br />
+   Then I use this "keyword" as my second request's URL "term" value. <br />
+   *The basic idea is that: I first search all the events that is related to Apica System's geo location, and from the first event that comes up, I extract its categories, and say I want to search more similar events within the same category, so that I start my second reqeust.* <br />
+   ![request1](https://github.com/shixianc/hiring-intern/blob/master/screenshots/postman_result.png);<br />
+   All test cases passed with **Status 200**. <br />
+   ![request1](https://github.com/shixianc/hiring-intern/blob/master/screenshots/request2_response_body.png);<br />
+   We can examine the response body which shows that the categories from second reqeust is all "Arts & Theatre". (The whole response body can be found in src/ folder)<br />
     
 # - Part 3 Chaining API Requests with Apica
   
