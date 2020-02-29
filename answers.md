@@ -60,10 +60,20 @@
    *The basic idea is that: I first search all the events that is related to Apica System's geo location, and from the first event that comes up, I extract its categories, and say I want to search more similar events within the same category, so that I start my second reqeust.* <br />
    ![request1](https://github.com/shixianc/hiring-intern/blob/master/screenshots/postman_result.png);<br />
    All test cases passed with **Status 200**. <br />
-   ![request1](https://github.com/shixianc/hiring-intern/blob/master/screenshots/request2_response_body.png);<br />
-   We can examine the response body which shows that the categories from second reqeust is all "Arts & Theatre". (The whole response body can be found in src/ folder)<br />
+   ![request1](https://github.com/shixianc/hiring-intern/blob/master/screenshots/request2_reponse_body.png);<br />
+   We can examine the response body which shows that the categories from second reqeust is all "Arts & Theatre". (The whole response body can be found in src/ folder)<br /><br />
+   
+### follow ups:
+   #### - Why is the global/environment variable necessary? 
+   	
+global / Environment Variable is necessary because we need it to **pass data to other reqeusts. / or passing data from pre-tests to requests or tests** <br />
+Best practice is that we need to limit the usage of variables and set their scope as small as possible. Global vars may be useful for quick prototyping so that we would not worry much at the beginning. One last thing that I find online, when I only has one enviroment variable, it's better to set it to collection variable to avoid overheads. <br />
+   
+   #### - What would happen to the second request if the pre-request script is missing or failed to run successfully?
+   If my first test failed, it would fail to set the "keyword" environment variable with correct value. Because I have set up the enviroment, the default value for "keyword" is null. Therefore, the API would take keyword as "null" input. There are corner case checking from their API, so TicketMaster API would set the keyword to default which is "all categoreis".<br /><br />
     
 # - Part 3 Chaining API Requests with Apica
+
   
 # - Part 4 Java Exercise
 
