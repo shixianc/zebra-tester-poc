@@ -1,9 +1,5 @@
-# Apica Engineering Internship - Technical Exercise
+# Zebra Tester proof of concept. 
 
-
-
-
-## - Please click on answers.md to see all my answers.
 
 ## - Related Source code can be found in /src folder.
 
